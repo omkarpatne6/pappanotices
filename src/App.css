@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #1b8b00;
+  background-image: linear-gradient(314deg, #23c000 0%, #88ff00 74%);
+  border-radius: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /* background: linear-gradient(transparent, #23c000);*/
+  background-color: #1b8b00;
+  background-image: linear-gradient(314deg, #198a00 0%, #75d803 74%);
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  background-color: #fff;
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form .form-control {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+form .form-control:focus {
+  background-color: #f2f2f2;
+  box-shadow: none !important;
+}
+
+form button {
+  background-color: #1b8b00;
+  background-image: linear-gradient(314deg, #23c000 0%, #88ff00 74%);
+  border: none !important;
+  color: #fff !important;
+  padding: 10px 70px !important;
+  margin: auto !important;
+  text-transform: uppercase;
+  font-weight: bold !important;
+  transition: all 0.5s ease !important;
+}
+
+form button:focus {
+  box-shadow: none !important;
+  background-image: linear-gradient(314deg, #23c000 0%, #88ff00 90%);
 }
